@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Generator Algorithm</title>
+    <link rel="stylesheet" href="tachyons.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Menu1">
+        <h2 class="tc mt3 mb2"><span class="code white bg-near-black br3 ba bw2 b--dark-gray">Top Left Corner (x, y) -- Alt + Q</span></h2>
+        <h3 class="tc mt3 mb2"><span id="TopLeftCornerText" class="code white bg-dark-green br3 ba bw2 b--green"></span></h3>
+        <h2 class="tc mt4 mb2"><span class="code white bg-near-black br3 ba bw2 b--dark-gray">Bottom Right Corner (x, y) -- Alt + C</span></h2>
+        <h3 class="tc mt3 mb2"><span id="BottomRightCornerText" class="code white bg-dark-green br3 ba bw2 b--green"></span></h3>
+        <h4 class="tc mt4 mb2"><span class="code white bg-near-black w-100 br3 ba bw2 b--dark-gray">Mouse Move Delay (Miliseconds)</span></h4>
+        <div class="flex w-100 justify-center">
+            <input id="mouseMoveDelayInput" class="code b white pa2 input-reset ba bg-dark-green br3 ba bw2 b--green center" type="number"/>
+        </div>
+
+        <h4 class="tc mt4 mb2"><span class="code white bg-near-black w-100 br3 ba bw2 b--dark-gray">Grid Width</span></h4>
+        <div class="flex w-100 justify-center">
+            <input id="gridWidthInput" class="code b white pa2 input-reset ba bg-dark-green br3 ba bw2 b--green center" type="number"/>
+        </div>
+        <h4 class="tc mt4 mb2"><span class="code white bg-near-black w-100 br3 ba bw2 b--dark-gray">Grid Height</span></h4>
+        <div class="flex w-100 justify-center">
+            <input id="gridHeightInput" class="code b white pa2 input-reset ba bg-dark-green br3 ba bw2 b--green center" type="number"/>
+        </div>
+
+        <h2 class="tc mt4 mb2"><span class="code white bg-near-black br3 ba bw2 b--dark-gray">Solve once: Alt + E -- Solve until finished: Alt + R</span></h2>
+        <p class="tc mt3 mb2"><span class="code white bg-purple br3 ba bw2 b--light-purple lh-copy">How to use: set the top left and bottom right corners of the puzzle, shown with the red dots in the image. This lets the code get the correct pixels. Something to know, as shown with blue in the image, the first generator you do in a server will have text at the top that changes the position of the puzzle, so after doing that first one you may need to re-set the corner positions</span></p>
+        <div class="flex w-100 justify-center">
+            <img src="tutorial.png" width="497" height="472"/>
+        </div>
+        <!-- <h2 class="code blue w-100 tc mt5">Input file location</h2>
+        <div class="flex w-100 justify-center">
+            <input id="FilePathInput" class="code pa2 input-reset ba bg-transparent hover-bg-green hover-white center"/>
+        </div>
+    
+        <div class="flex w-100 justify-center">
+            <button id="FilePathButton" class="code mb1 br2 ph3 pv2 white bg-dark-gray pointer v-mid ma2">Set File</button>
+        </div>
+        <h3 id="LoadingText" class="code blue w-100 tc mt3">Loading selected file...</h3>
+        <h2 id="FilePathText" class="code navy w-100 tc mt3"></h2> -->
+        <!-- <img src="johndoe.webp" width="500" height="600"> -->
+    </div>
+    <script type="module" src="./renderer.js"></script>
+</body>
+</html>

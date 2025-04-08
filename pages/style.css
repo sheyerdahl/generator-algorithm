@@ -1,0 +1,10 @@
+body {
+  /* background: linear-gradient(to right, rgb(158, 228, 230), rgb(165, 238, 177)); */
+  background-image: url("johndoe.webp");
+  background-size: cover;
+  /* background-color: transparent; */
+}
+
+.hide {
+  display: none;
+}
