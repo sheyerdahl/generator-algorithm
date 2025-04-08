@@ -1,19 +1,10 @@
 const electronAPI = window.electronAPI;
+
 const topLeftCornerText = document.getElementById("TopLeftCornerText");
 const bottomRightCornerText = document.getElementById("BottomRightCornerText");
 const mouseMoveDelayInput = document.getElementById("mouseMoveDelayInput");
 const gridWidthInput = document.getElementById("gridWidthInput");
 const gridHeightInput = document.getElementById("gridHeightInput");
-
-// filePathButton.addEventListener("click", UpdateSelectedFile);
-
-function UpdateSelectedFile() {
-    const pathName = filePathInput.value;
-
-    // console.log(pathName)
-    loadingText.innerText = "Selected file is:";
-    filePathText.innerText = pathName;
-}
 
 //console.log(topLeftCornerPosition);
 setInterval(async () => {
